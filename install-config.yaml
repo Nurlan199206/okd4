@@ -1,0 +1,30 @@
+apiVersion: v1
+baseDomain: okd.local
+metadata:
+  name: lab
+
+compute:
+- hyperthreading: Enabled
+  name: worker
+  replicas: 0
+
+controlPlane:
+  hyperthreading: Enabled
+  name: master
+  replicas: 1
+
+networking:
+  clusterNetwork:
+  - cidr: 100.64.0.0/14
+    hostPrefix: 23
+  networkType: OpenShiftSDN
+  serviceNetwork: 
+  - 172.30.0.0/16
+
+platform:
+  none: {}
+
+fips: false
+
+pullSecret: '{"auths":{"fake":{"auth": "bar"}}}' 
+sshKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDL+S8/2Rgo7d1uiE13nm1Uvj+kNGSlCTNt0gwLF08iSgW6vp9XNKIYbMdqKEjYre6cetu6MtGJd8PpA3FycnAFTuLY//5GmX/DOPlTjGsmRcXfEbO5oe8QzKlS5FnAuYu7o4H8SRNFlHrjIaLJ5ygHurB7Wjzfg9Y+fSqAsctF7JoOTmzqBHVXob4CV9oXHAHVqAYA8F7lOw1kee2oUg75PEpU2EVH+nhHbGgIM0CaJSLHmcphWA+KdhCKozV8w3pqYYcJRfJTz7R0Mo9aMmciBGtAAcKHPrkW26reWeWepMW/MxvQ2gJr59vnoQkqpQz/nwwztMrg8v/6SG95Tci3 root@web.okd.kz'   
