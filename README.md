@@ -8,7 +8,7 @@ RAM: 32GB
 
 DISK: 1TB SSD
 
-ОС: CentOS 7.8
+ОС: fcos
 
 OKD release: https://github.com/openshift/okd/releases/tag/4.5.0-0.okd-2020-08-12-020541
 
