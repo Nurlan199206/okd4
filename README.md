@@ -8,7 +8,7 @@ RAM: 32GB
 
 DISK: 1TB SSD
 
-ОС: fcos
+ОС: fedora-coreos-32.20200629.3.0-metal.x86_64.raw.xz
 
 OKD release: https://github.com/openshift/okd/releases/tag/4.5.0-0.okd-2020-08-12-020541
 
