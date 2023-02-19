@@ -18,9 +18,9 @@ OKD release: https://github.com/openshift/okd/releases/tag/4.5.0-0.okd-2020-08-1
 
 ```openshift-install create ignition-configs```
 
-```====================================STATIC IP=============================================
+```====================================STATIC IP=============================================```
 
-nmcli con mod "Wired connection 1" ipv4.addresses 10.160.1.x/24
+```nmcli con mod "Wired connection 1" ipv4.addresses 10.160.1.x/24
 nmcli con mod "Wired connection 1" ipv4.gateway 10.160.1.1
 nmcli con mod "Wired connection 1" ipv4.dns "10.201.1.12,10.201.1.13"
 nmcli con mod "Wired connection 1" ipv4.method manual - change from DHCP to static
